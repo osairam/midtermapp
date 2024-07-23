@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/background_image"
+    android:layout_gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculator"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="32sp"
+        android:gravity="center"
+        android:background="@drawable/result_background"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/firstNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="First Number"
+        android:inputType="numberDecimal"
+        android:background="@drawable/input_background"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/secondNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Second Number"
+        android:inputType="numberDecimal"
+        android:background="@drawable/input_background"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@android:color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+"
+            android:background="@drawable/button_background"
+            android:textColor="@android:color/white"
+            android:layout_margin="4dp"/>
+
+        <Button
+            android:id="@+id/subtractButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-"
+            android:background="@drawable/button_background"
+            android:textColor="@android:color/white"
+            android:layout_margin="4dp"/>
+
+        <Button
+            android:id="@+id/multiplyButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="*"
+            android:background="@drawable/button_background"
+            android:textColor="@android:color/white"
+            android:layout_margin="4dp"/>
+
+        <Button
+            android:id="@+id/divideButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="/"
+            android:background="@drawable/button_background"
+            android:textColor="@android:color/white"
+            android:layout_margin="4dp"/>
+    </LinearLayout>
+
+</LinearLayout>
